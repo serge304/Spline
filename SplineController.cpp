@@ -6,6 +6,8 @@
  */
 
 #include "SplineController.h"
+#include <Math.h>
+#include <Algorithm.h>
 
 namespace Skasp {
 
@@ -464,3 +466,5 @@ bool SplineController::ApproximateWithOptimalGrid(Spline& spline, const SplinePo
 
     return true;
 }
+
+} // namespace Skasp {

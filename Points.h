@@ -1,3 +1,10 @@
+/*
+ * Points.h
+ *
+ *  Created on: Sep 28, 2022
+ *      Author: sergey
+ */
+
 #ifndef POINTS_H_
 #define POINTS_H_
 
@@ -8,8 +15,10 @@
 #if __cplusplus >= 202002L
 #include <span>
 #else
-#include <Skasp.Std/span.h>
+#include <span.h>
 #endif
+
+namespace Skasp {
 
 //////////////////////////////////////////////////////////////////////////
 ///                                 Теги                               ///
@@ -129,5 +138,7 @@ struct View2d_T
 
 typedef View2d_T<double>        View2d;
 typedef View2d_T<const double> CView2d;
+
+} // namespace Skasp {
 
 #endif /* POINTS_H_ */

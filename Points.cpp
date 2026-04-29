@@ -7,6 +7,8 @@
 
 #include "Points.h"
 
+namespace Skasp {
+
 void Points2d::reserve(size_t n)
 {
     args.reserve(n);
@@ -61,3 +63,5 @@ void Points3d::push_back(const Point3d& point)
 {
     push_back(point.x(), point.y(), point.z());
 }
+
+} // namespace Skasp { namespace Base {

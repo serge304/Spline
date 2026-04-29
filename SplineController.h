@@ -10,6 +10,8 @@
 
 #include "Spline.h"
 
+namespace Skasp {
+
 class SplineController
 {
 public:
@@ -59,5 +61,8 @@ private:
     Eigen::MatrixXd mA;
     Eigen::VectorXd mR, mC;
 };
+
+} // namespace Skasp {
+
 
 #endif /* SPLINECONTROLLER_H_ */

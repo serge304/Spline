@@ -6,6 +6,9 @@
  */
 
 #include "Spline.h"
+#include <Math.h>
+#include <Numeric.h>
+#include <Algorithm.h>
 
 namespace Skasp {
 
@@ -424,3 +427,5 @@ void Spline::SetBuffer(size_t n) const
         mBuff.resize(n, 0.0);
     std::fill_n(mBuff.begin(), n, 0.0);
 }
+
+} // namespace Skasp {

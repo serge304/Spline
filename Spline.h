@@ -10,6 +10,8 @@
 
 #include <Points.h>
 
+namespace Skasp {
+
 struct SplinePoint
 {
     SplinePoint() : x(0.0), y(0.0), w(0.0) { }
@@ -107,5 +109,8 @@ private:
     std::vector<double> mKnotsBuff;     // буфер для установки коэфициентов
     mutable std::vector<double> mBuff;  // буфер для расчетов
 };
+
+}  //namespace Skasp {
+
 
 #endif /* SPLINE_H_ */
